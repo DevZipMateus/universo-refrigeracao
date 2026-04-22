@@ -57,7 +57,7 @@
     }
 
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    html { scroll-behavior: smooth; }
+    html { scroll-behavior: smooth; overflow-x: hidden; }
     body {
       font-family: var(--ff-corpo);
       background: var(--branco);
@@ -1184,7 +1184,6 @@
     @media (max-width: 1199px) {
       .container { max-width: 960px; }
       .hero-inner { gap: 48px; }
-      .servicos-grid { grid-template-columns: repeat(3, 1fr); }
     }
 
     /* TABLET PAISAGEM */
@@ -1212,12 +1211,14 @@
 
       .sobre-grid { grid-template-columns: 1fr; gap: 40px; }
       .sobre-visual { max-width: 500px; margin: 0 auto; }
+      .sobre-badge { bottom: 10px; right: 10px; }
       .sobre-text .section-tag { margin: 0 auto 12px; }
       .sobre-text h2 { text-align: center; }
       .sobre-text .btn { display: block; width: fit-content; margin: 0 auto; }
 
       .servicos-grid { grid-template-columns: repeat(2, 1fr); }
       .mvv-grid { grid-template-columns: repeat(2, 1fr); }
+      .mvv-card:last-child:nth-child(odd) { grid-column: 1 / -1; max-width: 420px; margin: 0 auto; }
 
       .numeros-grid { grid-template-columns: repeat(2, 1fr); }
       .numero-item:nth-child(2) { border-right: none; }
@@ -1275,6 +1276,7 @@
       section { padding: 44px 0; }
       .container { padding: 0 1rem; }
       .logo-text span { display: none; }
+      .contato-mapa iframe { height: 220px; }
       .whatsapp-float { bottom: 16px; right: 16px; width: 50px; height: 50px; font-size: 1.4rem; }
       .scroll-top { bottom: 16px; left: 16px; width: 38px; height: 38px; }
     }
@@ -1286,7 +1288,7 @@
       .section-title { font-size: 1.75rem; }
       .hero-text h1 { font-size: 2rem; }
       .dif-grid { grid-template-columns: 1fr; }
-      .dif-item { border-right: none; border-bottom: 1px solid rgba(255,255,255,0.10); }
+      .dif-item { border-right: none; border-top: none; border-bottom: 1px solid rgba(255,255,255,0.10); }
     }
 
     /* MOBILE MÍNIMO ABSOLUTO */
@@ -1295,7 +1297,7 @@
       .section-title { font-size: 1.6rem; }
       .hero-btns .btn { max-width: 100%; }
       .numeros-grid { grid-template-columns: 1fr; }
-      .numero-item { border-right: none; border-bottom: 1px solid rgba(255,255,255,0.10); }
+      .numero-item { border-right: none; border-top: none; border-bottom: 1px solid rgba(255,255,255,0.10); }
     }
 
     /* LANDSCAPE BAIXO */
