@@ -190,37 +190,17 @@
     .loading-brand {
       display: flex;
       align-items: center;
-      gap: 14px;
-    }
-    .loading-brand-icon {
-      width: 56px; height: 56px;
-      background: rgba(255,255,255,0.12);
-      border-radius: 14px;
-      display: flex;
-      align-items: center;
       justify-content: center;
-      font-size: 1.6rem;
-      color: var(--branco);
+    }
+    .loading-logo {
+      height: 72px;
+      width: auto;
+      filter: brightness(0) invert(1);
       animation: loadingPulse 1.4s ease-in-out infinite;
     }
     @keyframes loadingPulse {
       0%, 100% { transform: scale(1); opacity: 0.85; }
       50%       { transform: scale(1.1); opacity: 1; }
-    }
-    .loading-brand-text strong {
-      display: block;
-      font-family: var(--ff-titulo);
-      font-size: 1.3rem;
-      font-weight: 800;
-      color: var(--branco);
-      letter-spacing: 0.5px;
-    }
-    .loading-brand-text span {
-      font-size: 0.7rem;
-      font-weight: 500;
-      letter-spacing: 3px;
-      text-transform: uppercase;
-      color: rgba(255,255,255,0.55);
     }
     .loading-bar-wrap {
       width: 180px;
@@ -1384,11 +1364,7 @@
   <!-- Loading screen -->
   <div id="loading-screen" role="status" aria-label="Carregando...">
     <div class="loading-brand">
-      <div class="loading-brand-icon"><i class="fa-solid fa-snowflake"></i></div>
-      <div class="loading-brand-text">
-        <strong>Universo Refrigeração</strong>
-        <span>Curitiba / PR</span>
-      </div>
+      <img src="images/favicon.png" alt="Universo Refrigeração" class="loading-logo">
     </div>
     <div class="loading-bar-wrap"><div class="loading-bar"></div></div>
     <p class="loading-text">Carregando</p>
