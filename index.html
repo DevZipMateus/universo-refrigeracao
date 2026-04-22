@@ -615,7 +615,12 @@
     /* ══════════════════════════════════
        SOBRE
     ══════════════════════════════════ */
-    #sobre { background: var(--cinza); }
+    #sobre {
+      background:
+        linear-gradient(rgba(245,247,250,0.93), rgba(245,247,250,0.93)),
+        url('images/bg-sobre.jpg') center / cover no-repeat;
+      background-attachment: scroll, fixed;
+    }
 
     .sobre-grid {
       display: grid;
@@ -746,7 +751,12 @@
     /* ══════════════════════════════════
        SERVIÇOS
     ══════════════════════════════════ */
-    #servicos { background: var(--branco); }
+    #servicos {
+      background:
+        linear-gradient(rgba(255,255,255,0.94), rgba(255,255,255,0.94)),
+        url('images/bg-servicos.jpg') center / cover no-repeat;
+      background-attachment: scroll, fixed;
+    }
 
     .servicos-grid {
       display: grid;
@@ -809,7 +819,12 @@
     /* ══════════════════════════════════
        MVV
     ══════════════════════════════════ */
-    #mvv { background: var(--azul); }
+    #mvv {
+      background:
+        linear-gradient(rgba(11,77,164,0.93), rgba(11,77,164,0.93)),
+        url('images/bg-mvv.jpg') center / cover no-repeat;
+      background-attachment: scroll, fixed;
+    }
 
     .mvv-grid {
       display: grid;
@@ -898,7 +913,12 @@
     /* ══════════════════════════════════
        CONTATO
     ══════════════════════════════════ */
-    #contato { background: var(--cinza); }
+    #contato {
+      background:
+        linear-gradient(rgba(245,247,250,0.93), rgba(245,247,250,0.93)),
+        url('images/bg-contato.jpg') center / cover no-repeat;
+      background-attachment: scroll, fixed;
+    }
 
     .contato-grid {
       display: grid;
@@ -1167,6 +1187,11 @@
 
     /* TABLET PAISAGEM */
     @media (max-width: 1023px) {
+      /* desativa parallax em mobile/tablet */
+      #sobre, #servicos, #mvv, #contato {
+        background-attachment: scroll, scroll;
+      }
+
       nav .nav-links { display: none; }
       .hamburger { display: flex; }
       section { padding: 80px 0; }
