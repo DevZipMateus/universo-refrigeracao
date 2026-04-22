@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://universorefrigeracao.com.br/sitemap.xml

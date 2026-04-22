@@ -1,0 +1,1757 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Universo Refrigeração</title>
+  <meta name="description" content="Universo Refrigeração — soluções eficientes em instalação, manutenção e reparo de ar-condicionado e refrigeração em Curitiba/PR. Atendimento ágil e qualidade garantida.">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Universo Refrigeração">
+  <meta name="theme-color" content="#0B4DA4">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Universo Refrigeração">
+  <meta property="og:description" content="Soluções eficientes em instalação, manutenção e reparo de ar-condicionado e refrigeração em Curitiba/PR.">
+  <meta property="og:image" content="images/og-image.png">
+  <meta property="og:locale" content="pt_BR">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Universo Refrigeração">
+  <meta name="twitter:description" content="Soluções eficientes em instalação, manutenção e reparo de ar-condicionado e refrigeração em Curitiba/PR.">
+  <meta name="twitter:image" content="images/og-image.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="apple-touch-icon" href="images/favicon.png">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    :root {
+      --azul:        #0B4DA4;
+      --azul-medio:  #1565C0;
+      --azul-vivo:   #1976D2;
+      --azul-claro:  #42A5F5;
+      --azul-palido: #E3F2FD;
+      --azul-bg:     #F0F7FF;
+      --branco:      #FFFFFF;
+      --cinza:       #F5F7FA;
+      --cinza-2:     #E8ECF0;
+      --texto:       #1A2744;
+      --texto-leve:  #64748B;
+      --borda:       #D0DCF0;
+      --header-h:    80px;
+      --ff-titulo:   'Poppins', sans-serif;
+      --ff-corpo:    'Inter', sans-serif;
+      --tr:          0.3s ease;
+      --radius:      12px;
+      --sombra:      0 4px 24px rgba(11,77,164,0.12);
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: var(--ff-corpo);
+      background: var(--branco);
+      color: var(--texto);
+      line-height: 1.7;
+      overflow-x: hidden;
+    }
+    img { display: block; max-width: 100%; }
+    a { text-decoration: none; color: inherit; }
+    ul { list-style: none; }
+
+    .container {
+      width: 100%;
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    section { padding: 96px 0; }
+
+    /* ══════════════════════════════════
+       COMPONENTES GLOBAIS
+    ══════════════════════════════════ */
+    .section-tag {
+      display: block;
+      width: fit-content;
+      margin: 0 auto 14px;
+      font-family: var(--ff-titulo);
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 3.5px;
+      text-transform: uppercase;
+      color: var(--azul-claro);
+    }
+    .section-tag::before,
+    .section-tag::after {
+      content: '—';
+      margin: 0 8px;
+      opacity: 0.6;
+    }
+
+    .section-title {
+      font-family: var(--ff-titulo);
+      font-size: clamp(2rem, 4vw, 3rem);
+      font-weight: 700;
+      line-height: 1.15;
+      text-align: center;
+      color: var(--texto);
+      margin-bottom: 16px;
+    }
+    .section-title span { color: var(--azul); }
+
+    .section-desc {
+      text-align: center;
+      color: var(--texto-leve);
+      font-size: 1rem;
+      font-weight: 400;
+      max-width: 580px;
+      margin: 0 auto 56px;
+      line-height: 1.8;
+    }
+
+    /* ══════════════════════════════════
+       BOTÕES
+    ══════════════════════════════════ */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      font-family: var(--ff-titulo);
+      font-size: 0.88rem;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      padding: 0.9rem 2rem;
+      border-radius: var(--radius);
+      border: 2px solid transparent;
+      cursor: pointer;
+      transition: all var(--tr);
+    }
+    .btn-azul {
+      background: var(--azul);
+      color: var(--branco);
+      border-color: var(--azul);
+    }
+    .btn-azul:hover {
+      background: var(--azul-medio);
+      border-color: var(--azul-medio);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 28px rgba(11,77,164,0.38);
+    }
+    .btn-outline-branco {
+      background: rgba(255,255,255,0.12);
+      color: var(--branco);
+      border-color: rgba(255,255,255,0.55);
+    }
+    .btn-outline-branco:hover {
+      background: rgba(255,255,255,0.22);
+      border-color: rgba(255,255,255,0.9);
+      transform: translateY(-2px);
+    }
+    .btn-outline-azul {
+      background: transparent;
+      color: var(--azul);
+      border-color: var(--azul);
+    }
+    .btn-outline-azul:hover {
+      background: var(--azul);
+      color: var(--branco);
+      transform: translateY(-2px);
+    }
+
+    /* ══════════════════════════════════
+       LOADING
+    ══════════════════════════════════ */
+    #loading-screen {
+      position: fixed;
+      inset: 0;
+      z-index: 9000;
+      background: linear-gradient(135deg, var(--azul) 0%, var(--azul-vivo) 100%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 28px;
+      transition: opacity 0.6s ease, visibility 0.6s ease;
+    }
+    #loading-screen.hidden { opacity: 0; visibility: hidden; }
+    .loading-brand {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+    .loading-brand-icon {
+      width: 56px; height: 56px;
+      background: rgba(255,255,255,0.12);
+      border-radius: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.6rem;
+      color: var(--branco);
+      animation: loadingPulse 1.4s ease-in-out infinite;
+    }
+    @keyframes loadingPulse {
+      0%, 100% { transform: scale(1); opacity: 0.85; }
+      50%       { transform: scale(1.1); opacity: 1; }
+    }
+    .loading-brand-text strong {
+      display: block;
+      font-family: var(--ff-titulo);
+      font-size: 1.3rem;
+      font-weight: 800;
+      color: var(--branco);
+      letter-spacing: 0.5px;
+    }
+    .loading-brand-text span {
+      font-size: 0.7rem;
+      font-weight: 500;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.55);
+    }
+    .loading-bar-wrap {
+      width: 180px;
+      height: 2px;
+      background: rgba(255,255,255,0.18);
+      border-radius: 2px;
+      overflow: hidden;
+    }
+    .loading-bar {
+      height: 100%;
+      background: rgba(255,255,255,0.9);
+      border-radius: 2px;
+      animation: loadingFill 1.8s ease forwards;
+    }
+    @keyframes loadingFill { from { width: 0; } to { width: 100%; } }
+    .loading-text {
+      font-size: 0.68rem;
+      font-weight: 600;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.55);
+    }
+
+    /* ══════════════════════════════════
+       SCROLL PROGRESS
+    ══════════════════════════════════ */
+    #scroll-progress {
+      position: fixed;
+      top: 0; left: 0;
+      height: 3px;
+      width: 0%;
+      background: linear-gradient(90deg, var(--azul), var(--azul-claro), var(--azul));
+      z-index: 2000;
+      transition: width 0.1s linear;
+    }
+
+    /* ══════════════════════════════════
+       HEADER
+    ══════════════════════════════════ */
+    #header {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 1000;
+      height: var(--header-h);
+      background: rgba(255,255,255,0.96);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--borda);
+      transition: box-shadow var(--tr);
+    }
+    #header.scrolled { box-shadow: 0 4px 24px rgba(11,77,164,0.1); }
+
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 100%;
+    }
+
+    .logo-wrap {
+      display: flex;
+      align-items: center;
+      gap: 11px;
+    }
+    .logo-icon {
+      width: 44px; height: 44px;
+      background: var(--azul);
+      border-radius: 11px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.25rem;
+      color: var(--branco);
+      flex-shrink: 0;
+    }
+    .logo-text strong {
+      display: block;
+      font-family: var(--ff-titulo);
+      font-size: 0.98rem;
+      font-weight: 700;
+      color: var(--azul);
+      line-height: 1.1;
+    }
+    .logo-text span {
+      font-size: 0.64rem;
+      font-weight: 500;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: var(--texto-leve);
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 0.25rem;
+    }
+    .nav-links a {
+      font-family: var(--ff-titulo);
+      font-size: 0.8rem;
+      font-weight: 500;
+      color: var(--texto-leve);
+      padding: 0.5rem 0.85rem;
+      border-radius: 8px;
+      transition: color var(--tr), background var(--tr);
+    }
+    .nav-links a:hover { color: var(--azul); background: var(--azul-palido); }
+    .nav-cta {
+      background: var(--azul) !important;
+      color: var(--branco) !important;
+      font-weight: 600 !important;
+      padding: 0.5rem 1.3rem !important;
+      border-radius: 8px;
+    }
+    .nav-cta:hover { background: var(--azul-medio) !important; color: var(--branco) !important; }
+
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+      background: none;
+      border: none;
+      padding: 4px;
+    }
+    .hamburger span {
+      display: block;
+      width: 24px; height: 2px;
+      background: var(--texto);
+      border-radius: 2px;
+      transition: all var(--tr);
+    }
+    .hamburger.open span:nth-child(1) { transform: rotate(45deg) translate(5px,5px); }
+    .hamburger.open span:nth-child(2) { opacity: 0; }
+    .hamburger.open span:nth-child(3) { transform: rotate(-45deg) translate(5px,-5px); }
+
+    #navMenu {
+      position: fixed;
+      top: var(--header-h);
+      left: 0; right: 0;
+      background: rgba(255,255,255,0.98);
+      backdrop-filter: blur(12px);
+      z-index: 999;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.4s ease, padding 0.3s ease;
+      border-bottom: 1px solid var(--borda);
+    }
+    #navMenu.open { max-height: 460px; padding: 20px 0 28px; }
+    #navMenu a {
+      display: block;
+      font-family: var(--ff-titulo);
+      font-size: 0.88rem;
+      font-weight: 600;
+      color: var(--texto-leve);
+      padding: 14px 24px;
+      border-bottom: 1px solid var(--borda);
+      transition: color var(--tr), background var(--tr);
+    }
+    #navMenu a:hover { color: var(--azul); background: var(--azul-bg); }
+    #navMenu .nav-cta {
+      display: block;
+      margin: 16px 24px 0;
+      text-align: center;
+      border-radius: 8px;
+      background: var(--azul) !important;
+      color: var(--branco) !important;
+      padding: 14px 24px !important;
+    }
+
+    /* ══════════════════════════════════
+       HERO
+    ══════════════════════════════════ */
+    #hero {
+      min-height: 100vh;
+      padding-top: var(--header-h);
+      display: flex;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+      background: linear-gradient(135deg, #072e6b 0%, #0B4DA4 45%, #1565C0 100%);
+    }
+
+    /* padrão geométrico de fundo */
+    .hero-geo {
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      overflow: hidden;
+    }
+    .hero-geo::before {
+      content: '';
+      position: absolute;
+      top: -20%; right: -10%;
+      width: 700px; height: 700px;
+      border: 1px solid rgba(255,255,255,0.05);
+      border-radius: 50%;
+    }
+    .hero-geo::after {
+      content: '';
+      position: absolute;
+      bottom: -25%; left: -8%;
+      width: 500px; height: 500px;
+      border: 1px solid rgba(255,255,255,0.04);
+      border-radius: 50%;
+    }
+    .hero-geo-dot {
+      position: absolute;
+      border-radius: 50%;
+      background: rgba(66,165,245,0.12);
+    }
+    .hero-geo-dot.a { width: 300px; height: 300px; top: 10%; right: 5%; }
+    .hero-geo-dot.b { width: 200px; height: 200px; bottom: 15%; left: 3%; }
+    .hero-geo-dot.c { width: 120px; height: 120px; top: 60%; right: 20%; }
+
+    .hero-inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 64px;
+      align-items: center;
+      position: relative;
+      z-index: 1;
+      padding: 48px 0;
+    }
+
+    .hero-eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: rgba(255,255,255,0.1);
+      border: 1px solid rgba(255,255,255,0.22);
+      border-radius: 100px;
+      padding: 0.4rem 1.1rem;
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.82);
+      margin-bottom: 24px;
+    }
+    .hero-eyebrow i { color: var(--azul-claro); }
+
+    .hero-text h1 {
+      font-family: var(--ff-titulo);
+      font-size: clamp(2.8rem, 6vw, 4.8rem);
+      font-weight: 800;
+      color: var(--branco);
+      line-height: 1.05;
+      margin-bottom: 22px;
+      letter-spacing: -1px;
+    }
+    .hero-text h1 span { color: var(--azul-claro); }
+
+    .hero-text h2 {
+      font-family: var(--ff-corpo);
+      font-size: clamp(0.95rem, 1.6vw, 1.08rem);
+      font-weight: 400;
+      color: rgba(255,255,255,0.75);
+      max-width: 520px;
+      line-height: 1.85;
+      margin-bottom: 38px;
+    }
+
+    .hero-btns {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+      margin-bottom: 52px;
+    }
+
+    .hero-stats {
+      display: flex;
+      gap: 36px;
+      padding-top: 32px;
+      border-top: 1px solid rgba(255,255,255,0.12);
+    }
+    .hero-stat strong {
+      display: block;
+      font-family: var(--ff-titulo);
+      font-size: 1.75rem;
+      font-weight: 800;
+      color: var(--branco);
+      line-height: 1;
+      margin-bottom: 4px;
+    }
+    .hero-stat span {
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.5);
+    }
+
+    /* card direita */
+    .hero-visual {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .hero-card {
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.14);
+      border-radius: 20px;
+      padding: 52px 40px;
+      text-align: center;
+      backdrop-filter: blur(24px);
+      width: 100%;
+      max-width: 400px;
+      animation: floatCard 7s ease-in-out infinite;
+    }
+    @keyframes floatCard {
+      0%, 100% { transform: translateY(0); }
+      50%       { transform: translateY(-14px); }
+    }
+    .hero-card-icon {
+      width: 80px; height: 80px;
+      background: rgba(66,165,245,0.15);
+      border: 1px solid rgba(66,165,245,0.3);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2rem;
+      color: var(--azul-claro);
+      margin: 0 auto 24px;
+    }
+    .hero-card h3 {
+      font-family: var(--ff-titulo);
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: var(--branco);
+      margin-bottom: 12px;
+      line-height: 1.3;
+    }
+    .hero-card p {
+      font-size: 0.88rem;
+      color: rgba(255,255,255,0.62);
+      line-height: 1.75;
+      margin-bottom: 28px;
+    }
+    .hero-card-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      justify-content: center;
+    }
+    .hero-card-tag {
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.16);
+      border-radius: 100px;
+      padding: 4px 14px;
+      font-size: 0.72rem;
+      font-weight: 600;
+      color: rgba(255,255,255,0.78);
+    }
+
+    /* ══════════════════════════════════
+       DIFERENCIAIS
+    ══════════════════════════════════ */
+    #diferenciais {
+      background: var(--azul);
+      padding: 56px 0;
+    }
+    .dif-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+    }
+    .dif-item {
+      text-align: center;
+      padding: 32px 20px;
+      border-right: 1px solid rgba(255,255,255,0.10);
+    }
+    .dif-item:last-child { border-right: none; }
+    .dif-item i {
+      font-size: 1.8rem;
+      color: var(--azul-claro);
+      margin-bottom: 14px;
+      display: block;
+    }
+    .dif-item strong {
+      display: block;
+      font-family: var(--ff-titulo);
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--branco);
+      margin-bottom: 6px;
+    }
+    .dif-item span {
+      font-size: 0.82rem;
+      color: rgba(255,255,255,0.58);
+    }
+
+    /* ══════════════════════════════════
+       SOBRE
+    ══════════════════════════════════ */
+    #sobre { background: var(--cinza); }
+
+    .sobre-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 72px;
+      align-items: center;
+    }
+    .sobre-visual { position: relative; }
+    .sobre-box {
+      background: var(--azul);
+      border-radius: 20px;
+      padding: 56px 44px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .sobre-box::before {
+      content: '';
+      position: absolute;
+      top: -40%; right: -20%;
+      width: 320px; height: 320px;
+      border: 1px solid rgba(255,255,255,0.05);
+      border-radius: 50%;
+      pointer-events: none;
+    }
+    .sobre-box-icon {
+      font-size: 2.8rem;
+      color: var(--azul-claro);
+      margin-bottom: 20px;
+      display: block;
+    }
+    .sobre-box-brand {
+      font-family: var(--ff-titulo);
+      font-size: 1.5rem;
+      font-weight: 800;
+      color: var(--branco);
+      letter-spacing: 0.5px;
+      margin-bottom: 4px;
+    }
+    .sobre-box-sub {
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--azul-claro);
+      margin-bottom: 24px;
+    }
+    .sobre-box p {
+      font-size: 0.9rem;
+      color: rgba(255,255,255,0.68);
+      line-height: 1.8;
+      font-style: italic;
+    }
+    .sobre-badge {
+      position: absolute;
+      bottom: -20px; right: -20px;
+      width: 88px; height: 88px;
+      background: var(--azul-claro);
+      border-radius: 50%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 20px rgba(11,77,164,0.3);
+    }
+    .sobre-badge strong {
+      font-family: var(--ff-titulo);
+      font-size: 1.5rem;
+      font-weight: 800;
+      color: var(--azul);
+      line-height: 1;
+    }
+    .sobre-badge span {
+      font-size: 0.6rem;
+      font-weight: 700;
+      color: var(--azul);
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    .sobre-text .section-tag { margin: 0 0 12px; }
+    .sobre-text .section-tag::before,
+    .sobre-text .section-tag::after { display: none; }
+    .sobre-text h2 {
+      font-family: var(--ff-titulo);
+      font-size: clamp(1.8rem, 3vw, 2.5rem);
+      font-weight: 700;
+      color: var(--texto);
+      line-height: 1.2;
+      margin-bottom: 24px;
+      text-align: left;
+    }
+    .sobre-text h2 span { color: var(--azul); }
+    .sobre-text p {
+      color: var(--texto-leve);
+      font-size: 0.96rem;
+      line-height: 1.88;
+      margin-bottom: 16px;
+    }
+    .sobre-text p strong { color: var(--texto); font-weight: 600; }
+
+    .sobre-highlights {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin: 24px 0 28px;
+    }
+    .sobre-highlight {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: var(--texto);
+    }
+    .sobre-highlight i {
+      width: 28px; height: 28px;
+      background: var(--azul-palido);
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.78rem;
+      color: var(--azul);
+      flex-shrink: 0;
+    }
+
+    /* ══════════════════════════════════
+       SERVIÇOS
+    ══════════════════════════════════ */
+    #servicos { background: var(--branco); }
+
+    .servicos-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+    .servico-card {
+      background: var(--branco);
+      border: 1px solid var(--borda);
+      border-radius: var(--radius);
+      padding: 36px 28px;
+      transition: border-color var(--tr), transform var(--tr), box-shadow var(--tr);
+      position: relative;
+      overflow: hidden;
+    }
+    .servico-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 3px;
+      background: linear-gradient(90deg, var(--azul), var(--azul-claro));
+      transform: scaleX(0);
+      transition: transform 0.4s ease;
+    }
+    .servico-card:hover::before { transform: scaleX(1); }
+    .servico-card:hover {
+      border-color: var(--azul);
+      transform: translateY(-6px);
+      box-shadow: var(--sombra);
+    }
+    .servico-icon {
+      width: 56px; height: 56px;
+      background: var(--azul-palido);
+      border-radius: var(--radius);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.4rem;
+      color: var(--azul);
+      margin-bottom: 20px;
+      transition: background var(--tr), color var(--tr);
+    }
+    .servico-card:hover .servico-icon {
+      background: var(--azul);
+      color: var(--branco);
+    }
+    .servico-card h3 {
+      font-family: var(--ff-titulo);
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--texto);
+      margin-bottom: 12px;
+    }
+    .servico-card p {
+      font-size: 0.9rem;
+      color: var(--texto-leve);
+      line-height: 1.75;
+    }
+
+    /* ══════════════════════════════════
+       MVV
+    ══════════════════════════════════ */
+    #mvv { background: var(--azul); }
+
+    .mvv-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+    .mvv-card {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: var(--radius);
+      padding: 44px 32px;
+      text-align: center;
+      transition: background var(--tr), transform var(--tr), border-color var(--tr);
+    }
+    .mvv-card:hover {
+      background: rgba(255,255,255,0.09);
+      border-color: rgba(66,165,245,0.35);
+      transform: translateY(-5px);
+    }
+    .mvv-icon {
+      width: 64px; height: 64px;
+      border-radius: 50%;
+      background: rgba(66,165,245,0.12);
+      border: 1px solid rgba(66,165,245,0.28);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+      color: var(--azul-claro);
+      margin: 0 auto 20px;
+    }
+    .mvv-card h3 {
+      font-family: var(--ff-titulo);
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: var(--branco);
+      margin-bottom: 16px;
+    }
+    .mvv-card p {
+      font-size: 0.9rem;
+      color: rgba(255,255,255,0.6);
+      line-height: 1.85;
+    }
+
+    /* ══════════════════════════════════
+       NÚMEROS
+    ══════════════════════════════════ */
+    #numeros {
+      background:
+        linear-gradient(135deg, rgba(7,46,107,0.97) 0%, rgba(11,77,164,0.95) 100%);
+      padding: 80px 0;
+    }
+    .numeros-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+    }
+    .numero-item {
+      text-align: center;
+      padding: 32px 24px;
+      border-right: 1px solid rgba(255,255,255,0.10);
+    }
+    .numero-item:last-child { border-right: none; }
+    .numero-item i {
+      font-size: 1.8rem;
+      color: var(--azul-claro);
+      margin-bottom: 14px;
+      display: block;
+    }
+    .numero-valor {
+      font-family: var(--ff-titulo);
+      font-size: clamp(2.2rem, 4vw, 3.5rem);
+      font-weight: 800;
+      color: var(--branco);
+      line-height: 1;
+      display: block;
+      margin-bottom: 6px;
+    }
+    .numero-label {
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.52);
+    }
+
+    /* ══════════════════════════════════
+       CONTATO
+    ══════════════════════════════════ */
+    #contato { background: var(--cinza); }
+
+    .contato-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: start;
+    }
+    .contato-text .section-tag { margin: 0 0 12px; }
+    .contato-text .section-tag::before,
+    .contato-text .section-tag::after { display: none; }
+    .contato-text h2 {
+      font-family: var(--ff-titulo);
+      font-size: clamp(1.8rem, 3vw, 2.5rem);
+      font-weight: 700;
+      color: var(--texto);
+      margin-bottom: 14px;
+      text-align: left;
+    }
+    .contato-text h2 span { color: var(--azul); }
+    .contato-text > p {
+      color: var(--texto-leve);
+      font-size: 0.95rem;
+      line-height: 1.85;
+      margin-bottom: 32px;
+    }
+    .contato-itens {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      margin-bottom: 24px;
+    }
+    .contato-item {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+    .contato-icon {
+      width: 44px; height: 44px;
+      border-radius: 10px;
+      background: var(--azul-palido);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1rem;
+      color: var(--azul);
+      flex-shrink: 0;
+    }
+    .contato-item-txt strong {
+      display: block;
+      font-size: 0.68rem;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: var(--texto-leve);
+      font-weight: 600;
+      margin-bottom: 2px;
+    }
+    .contato-item-txt a,
+    .contato-item-txt span {
+      font-size: 0.9rem;
+      color: var(--texto);
+      transition: color var(--tr);
+    }
+    .contato-item-txt a:hover { color: var(--azul); }
+
+    .sociais { display: flex; gap: 10px; }
+    .social-btn {
+      width: 42px; height: 42px;
+      border-radius: 10px;
+      background: var(--azul-palido);
+      border: 1px solid var(--borda);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.95rem;
+      color: var(--azul);
+      transition: all var(--tr);
+    }
+    .social-btn:hover {
+      background: var(--azul);
+      color: var(--branco);
+      transform: translateY(-2px);
+    }
+
+    .contato-mapa {
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: var(--sombra);
+    }
+    .contato-mapa iframe {
+      width: 100%;
+      height: 340px;
+      border: none;
+      display: block;
+    }
+
+    /* ══════════════════════════════════
+       FOOTER
+    ══════════════════════════════════ */
+    #footer { background: var(--azul); }
+    .footer-top {
+      height: 4px;
+      background: linear-gradient(90deg, #072e6b, var(--azul-claro), #072e6b);
+    }
+    .footer-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 36px 0 28px;
+      gap: 20px;
+    }
+    .footer-brand {
+      display: flex;
+      align-items: center;
+      gap: 11px;
+    }
+    .footer-brand-icon {
+      width: 40px; height: 40px;
+      background: rgba(255,255,255,0.1);
+      border-radius: 9px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.1rem;
+      color: var(--azul-claro);
+    }
+    .footer-brand-text strong {
+      display: block;
+      font-family: var(--ff-titulo);
+      font-size: 0.92rem;
+      font-weight: 700;
+      color: var(--branco);
+    }
+    .footer-brand-text span {
+      font-size: 0.68rem;
+      color: rgba(255,255,255,0.4);
+      letter-spacing: 1px;
+    }
+    .footer-info {
+      text-align: center;
+      font-size: 0.8rem;
+      color: rgba(255,255,255,0.42);
+      line-height: 1.7;
+    }
+    .footer-info strong { color: rgba(255,255,255,0.68); }
+    .footer-sociais { display: flex; gap: 8px; }
+    .footer-social-btn {
+      width: 38px; height: 38px;
+      border-radius: 9px;
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.14);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.88rem;
+      color: rgba(255,255,255,0.65);
+      transition: all var(--tr);
+    }
+    .footer-social-btn:hover {
+      background: rgba(255,255,255,0.18);
+      color: var(--branco);
+    }
+    .footer-copy {
+      text-align: center;
+      font-size: 0.7rem;
+      color: rgba(255,255,255,0.22);
+      padding-bottom: 20px;
+    }
+
+    /* ══════════════════════════════════
+       FLUTUANTES
+    ══════════════════════════════════ */
+    .whatsapp-float {
+      position: fixed;
+      bottom: 28px; right: 28px;
+      z-index: 900;
+      width: 56px; height: 56px;
+      border-radius: 50%;
+      background: #25D366;
+      color: var(--branco);
+      font-size: 1.6rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 20px rgba(37,211,102,0.35);
+      transition: transform var(--tr), box-shadow var(--tr);
+    }
+    .whatsapp-float:hover {
+      transform: scale(1.08);
+      box-shadow: 0 6px 28px rgba(37,211,102,0.5);
+    }
+    .scroll-top {
+      position: fixed;
+      bottom: 28px; left: 28px;
+      z-index: 900;
+      width: 42px; height: 42px;
+      border-radius: 50%;
+      background: var(--azul);
+      color: var(--branco);
+      font-size: 0.9rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity var(--tr), transform var(--tr);
+      border: none;
+      box-shadow: 0 4px 16px rgba(11,77,164,0.3);
+    }
+    .scroll-top.show { opacity: 1; pointer-events: all; }
+    .scroll-top:hover { transform: translateY(-2px); }
+
+    /* ══════════════════════════════════
+       ANIMAÇÕES
+    ══════════════════════════════════ */
+    .fade-up {
+      opacity: 0; transform: translateY(28px);
+      transition: opacity 0.7s ease, transform 0.7s ease;
+    }
+    .fade-up.visible { opacity: 1; transform: none; }
+    .fade-left {
+      opacity: 0; transform: translateX(-28px);
+      transition: opacity 0.7s ease, transform 0.7s ease;
+    }
+    .fade-left.visible { opacity: 1; transform: none; }
+    .fade-right {
+      opacity: 0; transform: translateX(28px);
+      transition: opacity 0.7s ease, transform 0.7s ease;
+    }
+    .fade-right.visible { opacity: 1; transform: none; }
+    .fade-scale {
+      opacity: 0; transform: scale(0.93);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+    .fade-scale.visible { opacity: 1; transform: none; }
+    .d1 { transition-delay: 0.05s; }
+    .d2 { transition-delay: 0.12s; }
+    .d3 { transition-delay: 0.19s; }
+    .d4 { transition-delay: 0.26s; }
+    .d5 { transition-delay: 0.33s; }
+    .d6 { transition-delay: 0.40s; }
+
+    /* ══════════════════════════════════
+       RESPONSIVIDADE  320px → 4K
+    ══════════════════════════════════ */
+
+    /* WIDESCREEN / 4K */
+    @media (min-width: 1920px) {
+      .container { max-width: 1400px; }
+      .section-title { font-size: 3.5rem; }
+      .hero-text h1 { font-size: 5.5rem; }
+    }
+
+    /* DESKTOP LARGO */
+    @media (max-width: 1399px) and (min-width: 1200px) {
+      .sobre-grid { gap: 56px; }
+      .contato-grid { gap: 48px; }
+    }
+
+    /* LAPTOP */
+    @media (max-width: 1199px) {
+      .container { max-width: 960px; }
+      .hero-inner { gap: 48px; }
+      .servicos-grid { grid-template-columns: repeat(3, 1fr); }
+    }
+
+    /* TABLET PAISAGEM */
+    @media (max-width: 1023px) {
+      nav .nav-links { display: none; }
+      .hamburger { display: flex; }
+      section { padding: 80px 0; }
+
+      .hero-inner { grid-template-columns: 1fr; gap: 40px; text-align: center; }
+      .hero-text h2 { margin-left: auto; margin-right: auto; }
+      .hero-btns { justify-content: center; }
+      .hero-stats { justify-content: center; }
+      .hero-visual { order: -1; }
+      .hero-card { max-width: 420px; }
+
+      .dif-grid { grid-template-columns: repeat(2, 1fr); }
+      .dif-item:nth-child(2) { border-right: none; }
+      .dif-item:nth-child(3),
+      .dif-item:nth-child(4) { border-top: 1px solid rgba(255,255,255,0.10); }
+
+      .sobre-grid { grid-template-columns: 1fr; gap: 40px; }
+      .sobre-visual { max-width: 500px; margin: 0 auto; }
+      .sobre-text .section-tag { margin: 0 auto 12px; }
+      .sobre-text h2 { text-align: center; }
+      .sobre-text .btn { display: block; width: fit-content; margin: 0 auto; }
+
+      .servicos-grid { grid-template-columns: repeat(2, 1fr); }
+      .mvv-grid { grid-template-columns: repeat(2, 1fr); }
+
+      .numeros-grid { grid-template-columns: repeat(2, 1fr); }
+      .numero-item:nth-child(2) { border-right: none; }
+      .numero-item:nth-child(3),
+      .numero-item:nth-child(4) { border-top: 1px solid rgba(255,255,255,0.10); }
+
+      .contato-grid { grid-template-columns: 1fr; gap: 40px; }
+      .contato-text .section-tag { margin: 0 auto 12px; }
+      .contato-text h2 { text-align: center; }
+      .contato-text > p { text-align: center; }
+      .contato-itens { max-width: 460px; margin: 0 auto 24px; }
+      .sociais { justify-content: center; }
+    }
+
+    /* TABLET PEQUENO */
+    @media (max-width: 899px) {
+      .sobre-box { padding: 44px 32px; }
+      .mvv-grid { gap: 16px; }
+      .hero-card { padding: 40px 28px; }
+    }
+
+    /* MOBILE LARGO */
+    @media (max-width: 767px) {
+      :root { --header-h: 66px; }
+      section { padding: 64px 0; }
+      .container { padding: 0 1.25rem; }
+      .logo-text strong { font-size: 0.88rem; }
+      .section-title { font-size: clamp(1.8rem, 6vw, 2.4rem); }
+      .section-desc { font-size: 0.95rem; margin-bottom: 36px; }
+      .mvv-grid { grid-template-columns: 1fr; }
+      .servicos-grid { grid-template-columns: 1fr; }
+      .footer-inner { flex-direction: column; align-items: center; text-align: center; gap: 16px; }
+      .footer-brand { flex-direction: column; }
+      .footer-info { text-align: center; }
+    }
+
+    /* MOBILE */
+    @media (max-width: 599px) {
+      section { padding: 52px 0; }
+      .container { padding: 0 1.1rem; }
+      .hero-text h1 { font-size: clamp(2.2rem, 10vw, 3rem); }
+      .hero-btns { flex-direction: column; align-items: center; }
+      .hero-btns .btn { width: 100%; max-width: 300px; justify-content: center; }
+      .hero-stats { gap: 20px; flex-wrap: wrap; }
+      .hero-card { padding: 36px 20px; }
+      .dif-item { padding: 24px 14px; }
+      .sobre-badge { bottom: 10px; right: 10px; width: 76px; height: 76px; }
+      .sobre-badge strong { font-size: 1.4rem; }
+      .contato-mapa iframe { height: 260px; }
+    }
+
+    /* MOBILE PEQUENO */
+    @media (max-width: 479px) {
+      :root { --header-h: 60px; }
+      section { padding: 44px 0; }
+      .container { padding: 0 1rem; }
+      .logo-text span { display: none; }
+      .whatsapp-float { bottom: 16px; right: 16px; width: 50px; height: 50px; font-size: 1.4rem; }
+      .scroll-top { bottom: 16px; left: 16px; width: 38px; height: 38px; }
+    }
+
+    /* MOBILE MÍNIMO */
+    @media (max-width: 360px) {
+      .container { padding: 0 0.875rem; }
+      .btn { font-size: 0.8rem; padding: 0.8rem 1.4rem; }
+      .section-title { font-size: 1.75rem; }
+      .hero-text h1 { font-size: 2rem; }
+      .dif-grid { grid-template-columns: 1fr; }
+      .dif-item { border-right: none; border-bottom: 1px solid rgba(255,255,255,0.10); }
+    }
+
+    /* MOBILE MÍNIMO ABSOLUTO */
+    @media (max-width: 320px) {
+      .container { padding: 0 0.75rem; }
+      .section-title { font-size: 1.6rem; }
+      .hero-btns .btn { max-width: 100%; }
+      .numeros-grid { grid-template-columns: 1fr; }
+      .numero-item { border-right: none; border-bottom: 1px solid rgba(255,255,255,0.10); }
+    }
+
+    /* LANDSCAPE BAIXO */
+    @media (max-height: 500px) and (orientation: landscape) {
+      #hero { min-height: auto; padding: calc(var(--header-h) + 20px) 0 40px; }
+      .hero-card { display: none; }
+    }
+
+    /* REDUZIR MOVIMENTO */
+    @media (prefers-reduced-motion: reduce) {
+      .fade-up, .fade-left, .fade-right, .fade-scale { opacity: 1; transform: none; transition: none; }
+      .hero-card { animation: none; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Loading screen -->
+  <div id="loading-screen" role="status" aria-label="Carregando...">
+    <div class="loading-brand">
+      <div class="loading-brand-icon"><i class="fa-solid fa-snowflake"></i></div>
+      <div class="loading-brand-text">
+        <strong>Universo Refrigeração</strong>
+        <span>Curitiba / PR</span>
+      </div>
+    </div>
+    <div class="loading-bar-wrap"><div class="loading-bar"></div></div>
+    <p class="loading-text">Carregando</p>
+  </div>
+
+  <!-- Barra de progresso de scroll -->
+  <div id="scroll-progress"></div>
+
+  <!-- ══════ HEADER ══════ -->
+  <header id="header">
+    <div class="container header-inner">
+      <a href="#hero" class="logo-wrap" aria-label="Universo Refrigeração — início">
+        <div class="logo-icon"><i class="fa-solid fa-snowflake"></i></div>
+        <div class="logo-text">
+          <strong>Universo Refrigeração</strong>
+          <span>Curitiba / PR</span>
+        </div>
+      </a>
+      <nav class="nav-links" aria-label="Navegação principal">
+        <a href="#sobre">Sobre</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#mvv">Missão</a>
+        <a href="#contato">Contato</a>
+        <a href="https://wa.me/55XXXXXXXXXXX" target="_blank" rel="noopener noreferrer" class="nav-cta">
+          <i class="fa-brands fa-whatsapp"></i> WhatsApp
+        </a>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Abrir menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- nav mobile -->
+  <nav id="navMenu" aria-label="Menu mobile">
+    <a href="#sobre">Sobre</a>
+    <a href="#servicos">Serviços</a>
+    <a href="#mvv">Missão</a>
+    <a href="#contato">Contato</a>
+    <a href="https://wa.me/55XXXXXXXXXXX" target="_blank" rel="noopener noreferrer" class="nav-cta">
+      <i class="fa-brands fa-whatsapp"></i> Falar no WhatsApp
+    </a>
+  </nav>
+
+  <!-- ══════ HERO ══════ -->
+  <section id="hero" aria-label="Apresentação">
+    <div class="hero-geo" aria-hidden="true">
+      <div class="hero-geo-dot a"></div>
+      <div class="hero-geo-dot b"></div>
+      <div class="hero-geo-dot c"></div>
+    </div>
+    <div class="container">
+      <div class="hero-inner">
+        <div class="hero-text">
+          <div class="hero-eyebrow">
+            <i class="fa-solid fa-snowflake"></i>
+            Curitiba — Desde fevereiro de 2024
+          </div>
+          <h1>Universo<br><span>Refrigeração</span></h1>
+          <h2>Soluções eficientes e inovadoras em refrigeração, garantindo conforto, qualidade e segurança para residências e comércios em Curitiba e região.</h2>
+          <div class="hero-btns">
+            <a href="https://wa.me/55XXXXXXXXXXX" target="_blank" rel="noopener noreferrer" class="btn btn-azul">
+              <i class="fa-brands fa-whatsapp"></i> Solicitar orçamento
+            </a>
+            <a href="#servicos" class="btn btn-outline-branco">
+              Ver serviços <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+          <div class="hero-stats">
+            <div class="hero-stat">
+              <strong>2024</strong>
+              <span>Fundação</span>
+            </div>
+            <div class="hero-stat">
+              <strong>6+</strong>
+              <span>Serviços</span>
+            </div>
+            <div class="hero-stat">
+              <strong>100%</strong>
+              <span>Dedicação</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-card" aria-hidden="true">
+            <div class="hero-card-icon">
+              <i class="fa-solid fa-snowflake"></i>
+            </div>
+            <h3>Nossa empresa começa com você!</h3>
+            <p>Atendimento ágil, técnicos qualificados e compromisso com a excelência em cada serviço realizado.</p>
+            <div class="hero-card-tags">
+              <span class="hero-card-tag">Instalação</span>
+              <span class="hero-card-tag">Manutenção</span>
+              <span class="hero-card-tag">Reparo</span>
+              <span class="hero-card-tag">Limpeza</span>
+              <span class="hero-card-tag">Comercial</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════ DIFERENCIAIS ══════ -->
+  <section id="diferenciais" aria-label="Nossos diferenciais">
+    <div class="container">
+      <div class="dif-grid">
+        <div class="dif-item fade-scale d1">
+          <i class="fa-solid fa-medal"></i>
+          <strong>Qualidade</strong>
+          <span>Excelência em cada serviço</span>
+        </div>
+        <div class="dif-item fade-scale d2">
+          <i class="fa-solid fa-bolt"></i>
+          <strong>Agilidade</strong>
+          <span>Atendimento rápido e eficiente</span>
+        </div>
+        <div class="dif-item fade-scale d3">
+          <i class="fa-solid fa-shield-check"></i>
+          <strong>Garantia</strong>
+          <span>Segurança em todo serviço</span>
+        </div>
+        <div class="dif-item fade-scale d4">
+          <i class="fa-solid fa-handshake"></i>
+          <strong>Confiança</strong>
+          <span>Honestidade e transparência</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════ SOBRE ══════ -->
+  <section id="sobre">
+    <div class="container">
+      <div class="sobre-grid">
+        <div class="sobre-visual fade-left">
+          <div class="sobre-box">
+            <i class="fa-solid fa-snowflake sobre-box-icon"></i>
+            <div class="sobre-box-brand">Universo Refrigeração</div>
+            <div class="sobre-box-sub">Curitiba / PR</div>
+            <p>"Nascemos com o propósito de levar soluções eficientes de refrigeração para cada cliente, com dedicação e qualidade desde o primeiro dia."</p>
+          </div>
+          <div class="sobre-badge">
+            <strong>2024</strong>
+            <span>Desde</span>
+          </div>
+        </div>
+
+        <div class="sobre-text fade-right">
+          <span class="section-tag">Nossa história</span>
+          <h2>Uma empresa jovem com <span>propósito e qualidade</span></h2>
+          <p>A Universo Refrigeração nasceu em <strong>08 de fevereiro de 2024</strong>, com o propósito de levar soluções eficientes e de qualidade em refrigeração para clientes residenciais e comerciais em Curitiba e região.</p>
+          <p>Desde o início, a empresa foi construída com base na <strong>dedicação, no conhecimento técnico</strong> e na vontade de fazer a diferença no mercado. Mesmo sendo uma empresa jovem, sempre buscou se atualizar com as melhores práticas e tecnologias.</p>
+          <p>Cada atendimento é visto como uma oportunidade de construir relacionamentos duradouros — com honestidade, compromisso e satisfação garantida.</p>
+
+          <div class="sobre-highlights">
+            <div class="sobre-highlight">
+              <i class="fa-solid fa-check"></i>
+              Técnicos capacitados e atualizados
+            </div>
+            <div class="sobre-highlight">
+              <i class="fa-solid fa-check"></i>
+              Equipamentos modernos e eficientes
+            </div>
+            <div class="sobre-highlight">
+              <i class="fa-solid fa-check"></i>
+              Atendimento residencial e comercial
+            </div>
+            <div class="sobre-highlight">
+              <i class="fa-solid fa-check"></i>
+              Compromisso com a satisfação do cliente
+            </div>
+          </div>
+
+          <a href="https://wa.me/55XXXXXXXXXXX" target="_blank" rel="noopener noreferrer" class="btn btn-azul">
+            <i class="fa-brands fa-whatsapp"></i> Falar conosco
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════ SERVIÇOS ══════ -->
+  <section id="servicos">
+    <div class="container">
+      <span class="section-tag">O que oferecemos</span>
+      <h2 class="section-title">Nossos <span>serviços</span></h2>
+      <p class="section-desc">Soluções completas em refrigeração para residências e comércios — com qualidade, agilidade e garantia.</p>
+
+      <div class="servicos-grid">
+        <div class="servico-card fade-up d1">
+          <div class="servico-icon"><i class="fa-solid fa-wind"></i></div>
+          <h3>Instalação de ar-condicionado</h3>
+          <p>Instalação técnica e segura de aparelhos split, cassete e portátil para ambientes residenciais e comerciais.</p>
+        </div>
+        <div class="servico-card fade-up d2">
+          <div class="servico-icon"><i class="fa-solid fa-wrench"></i></div>
+          <h3>Manutenção preventiva</h3>
+          <p>Revisão periódica dos equipamentos para garantir desempenho ideal, economia de energia e maior vida útil.</p>
+        </div>
+        <div class="servico-card fade-up d3">
+          <div class="servico-icon"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+          <h3>Reparo e conserto</h3>
+          <p>Diagnóstico preciso e reparo ágil de equipamentos com defeito, devolvendo o conforto rapidamente.</p>
+        </div>
+        <div class="servico-card fade-up d4">
+          <div class="servico-icon"><i class="fa-solid fa-spray-can"></i></div>
+          <h3>Limpeza e higienização</h3>
+          <p>Limpeza completa dos filtros, evaporadora e condensadora para manter o ar puro, saudável e o equipamento funcionando bem.</p>
+        </div>
+        <div class="servico-card fade-up d5">
+          <div class="servico-icon"><i class="fa-solid fa-store"></i></div>
+          <h3>Refrigeração comercial</h3>
+          <p>Soluções de refrigeração para estabelecimentos comerciais, câmaras frias e equipamentos com alto padrão técnico.</p>
+        </div>
+        <div class="servico-card fade-up d6">
+          <div class="servico-icon"><i class="fa-solid fa-box-open"></i></div>
+          <h3>Venda de produtos</h3>
+          <p>Comercialização de equipamentos e peças de refrigeração com qualidade e procedência garantida.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════ MVV ══════ -->
+  <section id="mvv">
+    <div class="container">
+      <span class="section-tag" style="color:rgba(255,255,255,0.5)">Nossa identidade</span>
+      <h2 class="section-title" style="color:var(--branco)">Missão, <span style="color:var(--azul-claro)">visão</span> e valores</h2>
+      <p class="section-desc" style="color:rgba(255,255,255,0.52)">Os princípios que guiam nosso trabalho e nosso relacionamento com cada cliente.</p>
+
+      <div class="mvv-grid">
+        <div class="mvv-card fade-scale d1">
+          <div class="mvv-icon"><i class="fa-solid fa-bullseye"></i></div>
+          <h3>Missão</h3>
+          <p>Oferecer soluções eficientes e inovadoras em refrigeração, garantindo conforto, qualidade e segurança para nossos clientes, com atendimento ágil e compromisso com a excelência em cada serviço prestado.</p>
+        </div>
+        <div class="mvv-card fade-scale d2">
+          <div class="mvv-icon"><i class="fa-solid fa-eye"></i></div>
+          <h3>Visão</h3>
+          <p>Tornar-se referência no segmento de refrigeração em Curitiba e região, reconhecida pela qualidade, inovação e pelo compromisso com a satisfação de cada cliente atendido.</p>
+        </div>
+        <div class="mvv-card fade-scale d3">
+          <div class="mvv-icon"><i class="fa-solid fa-gem"></i></div>
+          <h3>Valores</h3>
+          <p>Qualidade · Honestidade · Compromisso · Inovação · Respeito ao cliente · Transparência · Dedicação · Segurança</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════ NÚMEROS ══════ -->
+  <section id="numeros" aria-label="Nossos números">
+    <div class="container">
+      <div class="numeros-grid">
+        <div class="numero-item fade-scale d1">
+          <i class="fa-solid fa-calendar-check"></i>
+          <strong class="numero-valor">2024</strong>
+          <span class="numero-label">Fundação</span>
+        </div>
+        <div class="numero-item fade-scale d2">
+          <i class="fa-solid fa-tools"></i>
+          <strong class="numero-valor">6+</strong>
+          <span class="numero-label">Serviços oferecidos</span>
+        </div>
+        <div class="numero-item fade-scale d3">
+          <i class="fa-solid fa-location-dot"></i>
+          <strong class="numero-valor">CWB</strong>
+          <span class="numero-label">Curitiba / PR</span>
+        </div>
+        <div class="numero-item fade-scale d4">
+          <i class="fa-solid fa-star"></i>
+          <strong class="numero-valor">100%</strong>
+          <span class="numero-label">Satisfação garantida</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════ CONTATO ══════ -->
+  <section id="contato">
+    <div class="container">
+      <div class="contato-grid">
+        <div class="contato-text fade-left">
+          <span class="section-tag">Fale conosco</span>
+          <h2>Entre em <span>contato</span> conosco</h2>
+          <p>Estamos prontos para atender você com agilidade e qualidade. Solicite seu orçamento sem compromisso.</p>
+
+          <div class="contato-itens">
+            <div class="contato-item">
+              <div class="contato-icon"><i class="fa-brands fa-whatsapp"></i></div>
+              <div class="contato-item-txt">
+                <strong>WhatsApp</strong>
+                <a href="https://wa.me/55XXXXXXXXXXX" target="_blank" rel="noopener noreferrer">Clique para conversar</a>
+              </div>
+            </div>
+            <div class="contato-item">
+              <div class="contato-icon"><i class="fa-solid fa-envelope"></i></div>
+              <div class="contato-item-txt">
+                <strong>E-mail</strong>
+                <a href="mailto:refrigeracaouniverso2023@gmail.com">refrigeracaouniverso2023@gmail.com</a>
+              </div>
+            </div>
+            <div class="contato-item">
+              <div class="contato-icon"><i class="fa-brands fa-instagram"></i></div>
+              <div class="contato-item-txt">
+                <strong>Instagram</strong>
+                <a href="https://www.instagram.com/universorefrigeracao/" target="_blank" rel="noopener noreferrer">@universorefrigeracao</a>
+              </div>
+            </div>
+            <div class="contato-item">
+              <div class="contato-icon"><i class="fa-solid fa-location-dot"></i></div>
+              <div class="contato-item-txt">
+                <strong>Endereço</strong>
+                <span>Rua Curitiba, 789 — Curitiba/PR</span>
+              </div>
+            </div>
+            <div class="contato-item">
+              <div class="contato-icon"><i class="fa-solid fa-clock"></i></div>
+              <div class="contato-item-txt">
+                <strong>Horário</strong>
+                <span>Seg–Sex 7h30–12h / 14h–17h30 · Sáb 7h30–11h30</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="sociais">
+            <a href="https://www.instagram.com/universorefrigeracao/" target="_blank" rel="noopener noreferrer"
+               class="social-btn" aria-label="Instagram Universo Refrigeração">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://wa.me/55XXXXXXXXXXX" target="_blank" rel="noopener noreferrer"
+               class="social-btn" aria-label="WhatsApp Universo Refrigeração">
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="fade-right">
+          <div class="contato-mapa">
+            <iframe
+              src="https://maps.google.com/maps?q=Rua+Curitiba,789,Curitiba,PR,Brasil&output=embed"
+              allowfullscreen
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Localização Universo Refrigeração">
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════ FOOTER ══════ -->
+  <footer id="footer">
+    <div class="footer-top"></div>
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <div class="footer-brand-icon"><i class="fa-solid fa-snowflake"></i></div>
+          <div class="footer-brand-text">
+            <strong>Universo Refrigeração</strong>
+            <span>Curitiba / PR</span>
+          </div>
+        </div>
+        <div class="footer-info">
+          <strong>Universo Refrigeração</strong><br>
+          CNPJ 53.858.587/0001-30 · Rua Curitiba, 789 — Curitiba/PR<br>
+          Seg–Sex 7h30–12h / 14h–17h30 · Sáb 7h30–11h30
+        </div>
+        <div class="footer-sociais">
+          <a href="https://www.instagram.com/universorefrigeracao/" target="_blank" rel="noopener noreferrer"
+             class="footer-social-btn" aria-label="Instagram">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="https://wa.me/55XXXXXXXXXXX" target="_blank" rel="noopener noreferrer"
+             class="footer-social-btn" aria-label="WhatsApp">
+            <i class="fa-brands fa-whatsapp"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    <p class="footer-copy">© 2025 Universo Refrigeração · CNPJ 53.858.587/0001-30</p>
+
+    <!-- Rodapé MonteSite - Atualização Automática -->
+    <div id="montesite-footer-badge"></div>
+    <script src="https://vaabpicspdbolvutnscp.supabase.co/functions/v1/get-footer-iframe"></script>
+  </footer>
+
+  <!-- WhatsApp flutuante -->
+  <a href="https://wa.me/55XXXXXXXXXXX" target="_blank" rel="noopener noreferrer"
+     class="whatsapp-float" aria-label="WhatsApp Universo Refrigeração">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <!-- Scroll top -->
+  <button class="scroll-top" id="scrollTop" aria-label="Voltar ao topo">
+    <i class="fa-solid fa-chevron-up"></i>
+  </button>
+
+  <script>
+    /* ── LOADING ── */
+    const loadingScreen = document.getElementById('loading-screen');
+    window.addEventListener('load', () => {
+      setTimeout(() => loadingScreen.classList.add('hidden'), 1800);
+    });
+
+    /* ── HEADER + SCROLL TOP + PROGRESS ── */
+    const header      = document.getElementById('header');
+    const scrollTop   = document.getElementById('scrollTop');
+    const progressBar = document.getElementById('scroll-progress');
+    window.addEventListener('scroll', () => {
+      const s = window.scrollY;
+      header.classList.toggle('scrolled', s > 60);
+      scrollTop.classList.toggle('show', s > 400);
+      const total = document.documentElement.scrollHeight - window.innerHeight;
+      progressBar.style.width = (s / total * 100) + '%';
+    }, { passive: true });
+    scrollTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+
+    /* ── HAMBURGER ── */
+    const hamburger = document.getElementById('hamburger');
+    const navMenu   = document.getElementById('navMenu');
+    hamburger.addEventListener('click', () => {
+      const open = navMenu.classList.toggle('open');
+      hamburger.classList.toggle('open', open);
+      hamburger.setAttribute('aria-expanded', open);
+    });
+    navMenu.querySelectorAll('a').forEach(a => {
+      a.addEventListener('click', () => {
+        navMenu.classList.remove('open');
+        hamburger.classList.remove('open');
+        hamburger.setAttribute('aria-expanded', 'false');
+      });
+    });
+
+    /* ── SCROLL ANIMATIONS ── */
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add('visible');
+          observer.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0, rootMargin: '0px 0px -50px 0px' });
+    document.querySelectorAll('.fade-up, .fade-left, .fade-right, .fade-scale').forEach(el => observer.observe(el));
+
+    /* ── ACTIVE NAV ── */
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks = document.querySelectorAll('.nav-links a:not(.nav-cta)');
+    window.addEventListener('scroll', () => {
+      let current = '';
+      sections.forEach(sec => { if (window.scrollY >= sec.offsetTop - 120) current = sec.id; });
+      navLinks.forEach(a => {
+        const active = a.getAttribute('href') === '#' + current;
+        a.style.color     = active ? 'var(--azul)'       : '';
+        a.style.background = active ? 'var(--azul-palido)' : '';
+      });
+    }, { passive: true });
+  </script>
+</body>
+</html>
