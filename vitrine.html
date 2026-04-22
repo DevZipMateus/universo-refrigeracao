@@ -228,28 +228,14 @@
     .badge-brand {
       display: flex;
       align-items: center;
-      gap: 10px;
+      justify-content: center;
       flex: 1;
-      justify-content: center;
     }
-    .badge-brand-icon {
-      width: 32px; height: 32px;
-      background: rgba(255,255,255,0.1);
-      border-radius: 8px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 0.9rem;
-      color: var(--azul-claro);
-    }
-    .badge-brand span {
-      font-family: var(--ff-titulo);
-      font-size: 0.72rem;
-      font-weight: 700;
-      letter-spacing: 1.5px;
-      text-transform: uppercase;
-      color: rgba(255,255,255,0.6);
-      white-space: nowrap;
+    .badge-brand-logo {
+      height: 36px;
+      width: auto;
+      filter: brightness(0) invert(1);
+      opacity: 0.85;
     }
     .badge-wa {
       display: inline-flex;
@@ -280,8 +266,7 @@
     @media (max-width: 767px) {
       :root { --header-h: 66px; }
       .logo-img { height: 42px; }
-      .badge-brand span { display: none; }
-      .badge-brand-icon { width: 28px; height: 28px; font-size: 0.8rem; }
+      .badge-brand-logo { height: 30px; }
     }
     @media (max-width: 599px) {
       #vitrine-badge { padding: 0 1rem; }
@@ -348,8 +333,7 @@
       <i class="fa-solid fa-arrow-left"></i> Voltar ao site
     </a>
     <div class="badge-brand">
-      <div class="badge-brand-icon"><i class="fa-solid fa-snowflake"></i></div>
-      <span>Vitrine Oficial</span>
+      <img src="images/favicon.png" alt="Universo Refrigeração" class="badge-brand-logo">
     </div>
     <a href="https://wa.me/55XXXXXXXXXXX" target="_blank" rel="noopener noreferrer" class="badge-wa">
       <i class="fa-brands fa-whatsapp"></i> WhatsApp
