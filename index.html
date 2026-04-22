@@ -213,7 +213,7 @@
       height: 100%;
       background: rgba(255,255,255,0.9);
       border-radius: 2px;
-      animation: loadingFill 1.8s ease forwards;
+      animation: loadingFill 2.2s ease forwards;
     }
     @keyframes loadingFill { from { width: 0; } to { width: 100%; } }
     .loading-text {
@@ -1783,7 +1783,7 @@
     /* ── LOADING ── */
     const loadingScreen = document.getElementById('loading-screen');
     window.addEventListener('load', () => {
-      setTimeout(() => loadingScreen.classList.add('hidden'), 1800);
+      setTimeout(() => loadingScreen.classList.add('hidden'), 2500);
     });
 
     /* ── HEADER + SCROLL TOP + PROGRESS ── */
