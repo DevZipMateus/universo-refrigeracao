@@ -86,33 +86,11 @@
     .logo-wrap {
       display: flex;
       align-items: center;
-      gap: 11px;
     }
-    .logo-icon {
-      width: 44px; height: 44px;
-      background: var(--azul);
-      border-radius: 11px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 1.25rem;
-      color: var(--branco);
-      flex-shrink: 0;
-    }
-    .logo-text strong {
+    .logo-img {
+      height: 48px;
+      width: auto;
       display: block;
-      font-family: var(--ff-titulo);
-      font-size: 0.98rem;
-      font-weight: 700;
-      color: var(--azul);
-      line-height: 1.1;
-    }
-    .logo-text span {
-      font-size: 0.64rem;
-      font-weight: 500;
-      letter-spacing: 1.5px;
-      text-transform: uppercase;
-      color: var(--texto-leve);
     }
 
     .nav-links {
@@ -301,7 +279,7 @@
     }
     @media (max-width: 767px) {
       :root { --header-h: 66px; }
-      .logo-text strong { font-size: 0.88rem; }
+      .logo-img { height: 42px; }
       .badge-brand span { display: none; }
       .badge-brand-icon { width: 28px; height: 28px; font-size: 0.8rem; }
     }
@@ -312,11 +290,8 @@
     }
     @media (max-width: 479px) {
       :root { --header-h: 60px; }
+      .logo-img { height: 36px; }
       .badge-brand { display: none; }
-      .logo-text span { display: none; }
-    }
-    @media (max-width: 360px) {
-      .logo-text strong { font-size: 0.8rem; }
     }
   </style>
 </head>
@@ -326,11 +301,7 @@
   <header id="header">
     <div class="container header-inner">
       <a href="index.html" class="logo-wrap" aria-label="Universo Refrigeração — início">
-        <div class="logo-icon"><i class="fa-solid fa-snowflake"></i></div>
-        <div class="logo-text">
-          <strong>Universo Refrigeração</strong>
-          <span>Curitiba / PR</span>
-        </div>
+        <img src="images/favicon.png" alt="Universo Refrigeração" class="logo-img">
       </a>
       <nav class="nav-links" aria-label="Navegação principal">
         <a href="index.html#sobre">Sobre</a>
