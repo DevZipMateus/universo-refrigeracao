@@ -1309,6 +1309,94 @@
       .fade-up, .fade-left, .fade-right, .fade-scale { opacity: 1; transform: none; transition: none; }
       .hero-card { animation: none; }
     }
+
+    /* ══════════════════════════════════
+       BANNER VITRINE
+    ══════════════════════════════════ */
+    .vitrine-banner {
+      background: linear-gradient(135deg, var(--azul) 0%, var(--azul-medio) 100%);
+      border-radius: 20px;
+      padding: 52px 48px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 32px;
+      margin-top: 56px;
+      position: relative;
+      overflow: hidden;
+    }
+    .vitrine-banner::before {
+      content: '';
+      position: absolute;
+      top: -40%; right: -5%;
+      width: 320px; height: 320px;
+      border: 1px solid rgba(255,255,255,0.06);
+      border-radius: 50%;
+      pointer-events: none;
+    }
+    .vitrine-banner::after {
+      content: '';
+      position: absolute;
+      bottom: -50%; left: 10%;
+      width: 240px; height: 240px;
+      border: 1px solid rgba(255,255,255,0.04);
+      border-radius: 50%;
+      pointer-events: none;
+    }
+    .vitrine-banner-text { position: relative; z-index: 1; }
+    .vitrine-banner-text p {
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+      color: var(--azul-claro);
+      margin-bottom: 10px;
+    }
+    .vitrine-banner-text h3 {
+      font-family: var(--ff-titulo);
+      font-size: clamp(1.4rem, 2.5vw, 1.9rem);
+      font-weight: 700;
+      color: var(--branco);
+      line-height: 1.25;
+      margin-bottom: 10px;
+    }
+    .vitrine-banner-text span {
+      font-size: 0.92rem;
+      color: rgba(255,255,255,0.62);
+    }
+    .vitrine-banner-cta {
+      position: relative;
+      z-index: 1;
+      flex-shrink: 0;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      font-family: var(--ff-titulo);
+      font-size: 0.92rem;
+      font-weight: 700;
+      color: var(--azul);
+      background: var(--branco);
+      border-radius: 12px;
+      padding: 1rem 2rem;
+      white-space: nowrap;
+      transition: background var(--tr), transform var(--tr), box-shadow var(--tr);
+    }
+    .vitrine-banner-cta:hover {
+      background: var(--azul-palido);
+      transform: translateY(-3px);
+      box-shadow: 0 10px 32px rgba(0,0,0,0.2);
+    }
+    @media (max-width: 767px) {
+      .vitrine-banner {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 40px 32px;
+      }
+      .vitrine-banner-cta { width: 100%; justify-content: center; }
+    }
+    @media (max-width: 479px) {
+      .vitrine-banner { padding: 32px 24px; }
+    }
   </style>
 </head>
 <body>
@@ -1344,6 +1432,7 @@
         <a href="#servicos">Serviços</a>
         <a href="#mvv">Missão</a>
         <a href="#contato">Contato</a>
+        <a href="vitrine.html"><i class="fa-solid fa-store"></i> Vitrine</a>
         <a href="https://wa.me/55XXXXXXXXXXX" target="_blank" rel="noopener noreferrer" class="nav-cta">
           <i class="fa-brands fa-whatsapp"></i> WhatsApp
         </a>
@@ -1360,6 +1449,7 @@
     <a href="#servicos">Serviços</a>
     <a href="#mvv">Missão</a>
     <a href="#contato">Contato</a>
+    <a href="vitrine.html"><i class="fa-solid fa-store"></i> Vitrine</a>
     <a href="https://wa.me/55XXXXXXXXXXX" target="_blank" rel="noopener noreferrer" class="nav-cta">
       <i class="fa-brands fa-whatsapp"></i> Falar no WhatsApp
     </a>
@@ -1387,6 +1477,9 @@
             </a>
             <a href="#servicos" class="btn btn-outline-branco">
               Ver serviços <i class="fa-solid fa-arrow-right"></i>
+            </a>
+            <a href="vitrine.html" class="btn btn-outline-branco">
+              <i class="fa-solid fa-store"></i> Ver vitrine
             </a>
           </div>
           <div class="hero-stats">
@@ -1542,6 +1635,18 @@
           <h3>Venda de produtos</h3>
           <p>Comercialização de equipamentos e peças de refrigeração com qualidade e procedência garantida.</p>
         </div>
+      </div>
+
+      <!-- banner vitrine -->
+      <div class="vitrine-banner fade-up">
+        <div class="vitrine-banner-text">
+          <p><i class="fa-solid fa-store"></i> &nbsp;Vitrine online</p>
+          <h3>Confira nossos produtos<br>direto na vitrine</h3>
+          <span>Equipamentos, peças e acessórios disponíveis para você.</span>
+        </div>
+        <a href="vitrine.html" class="vitrine-banner-cta">
+          <i class="fa-solid fa-store"></i> Acessar vitrine
+        </a>
       </div>
     </div>
   </section>
